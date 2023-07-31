@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #666;
+}
+
+.container{
+    width: 30vw;
+    height: 70vh;
+    margin: 5rem auto;
+    background-color: #000;
+    opacity: .8;
+    padding: 2rem 1.5rem;
+}
+
+.screen{
+    height: 4.8rem;
+}
+
+.screen #screen{
+    width: 100%;
+    height: 80%;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+}
+
+.button-container{
+    padding: 2rem;
+    height: 90%;
+    width: 100%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr  1fr  1fr  1fr 1fr;
+    grid-gap: .5rem;
+}
+
+.first-index{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.op-btn{
+    background-color: #eee;
+    transition: .2s;
+}
+
+.op-btn:hover{
+    opacity: .8;
+    border: 1px solid black;
+}
+
+.btn-eq{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-eq:hover{
+    transform: scale(1.01);
+}
+
+/* Utility classes */
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #eee;
+    border: 1px solid black;
+    transform: scale(.9);
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 55%;
+    }
+
+    .container{
+        width: 55vw;
+        height: 50vh;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    html{
+        font-size: 57%;
+    }
+
+    .container{
+        width: 40vw;
+        height: 60vh;
+        /*  */
+    }
+}
